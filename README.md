@@ -1,1 +1,1 @@
-# MAGIC-A-Co-Evolving-Attacker-Defender-Adversarial-Game-for-Robust-LLM-Safety
+# MAGIC: A Co-Evolving Attacker-Defender Adversarial Game for Robust LLM Safety
