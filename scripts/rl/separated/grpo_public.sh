@@ -63,13 +63,6 @@ export ENABLE_REVISION_REWARD="${ENABLE_REVISION_REWARD:-0}"
 export ENABLE_DEFENDER_QUALITY_REWARD="${ENABLE_DEFENDER_QUALITY_REWARD:-0}"
 export FORMAT_REWARD_VALUE="${FORMAT_REWARD_VALUE:-1}"
 
-export WANDB_API_KEY=21b669266f685050b37c1f7d96fe5628dd40bf8a
-export WANDB_BASE_URL=https://api.bandw.top
-export WILDGUARD_API_ENDPOINT="http://s-20251119153749-lp69w-decode.ailab-safethm.svc:23344/v1"
-export WORKSPACE=/mnt/shared-storage-user/wenxiaoyu
-export CHECKPOINT_DIR=/mnt/shared-storage-user/wenxiaoyu/MAGIC/checkpoints
-QWEN_257BI_MODEL_PATH=$WORKSPACE/models/Qwen2.5-7B-Instruct
-
 # Ray
 export RAY_MASTER_PORT="${RAY_MASTER_PORT:-6379}"
 
