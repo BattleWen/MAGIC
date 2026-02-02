@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+date-released: 2024-03
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Zou"
+  given-names: "Haosheng"
+- family-names: "Lv"
+  given-names: "Xiaowei"
+- family-names: "Jia"
+  given-names: "Shousheng"
+- family-names: "Zhang"
+  given-names: "Xiangzheng"
+title: "360-LLaMA-Factory"
+url: "https://github.com/Qihoo360/360-LLaMA-Factory"
+preferred-citation:
+  type: software
+  software:
+    name: "360-LLaMA-Factory"
+  authors:
+    - family-names: "Zou"
+      given-names: "Haosheng"
+    - family-names: "Lv"
+      given-names: "Xiaowei"
+    - family-names: "Jia"
+      given-names: "Shousheng"
+    - family-names: "Zhang"
+      given-names: "Xiangzheng"
+  title: 360-LLaMA-Factory"
+  url: "https://github.com/Qihoo360/360-LLaMA-Factory"
+  year: 2024

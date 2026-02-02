@@ -1,0 +1,9 @@
+Input:
+
+<query>
+{query}
+</query>
+
+<response>
+{response}
+</response>
