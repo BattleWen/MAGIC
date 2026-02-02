@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: /mnt/shared-storage-user/wenxiaoyu/models/Meta-Llama-3.1-8B-Instruct-abliterated/
+model_name_or_path: 
 
 ### method
 stage: sft
