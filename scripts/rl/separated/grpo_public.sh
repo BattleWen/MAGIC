@@ -63,6 +63,13 @@ export ENABLE_REVISION_REWARD="${ENABLE_REVISION_REWARD:-0}"
 export ENABLE_DEFENDER_QUALITY_REWARD="${ENABLE_DEFENDER_QUALITY_REWARD:-0}"
 export FORMAT_REWARD_VALUE="${FORMAT_REWARD_VALUE:-1}"
 
+export WANDB_API_KEY=21b669266f685050b37c1f7d96fe5628dd40bf8a
+export WANDB_BASE_URL=https://api.bandw.top
+export WILDGUARD_API_ENDPOINT="http://s-20251119153749-lp69w-decode.ailab-safethm.svc:23344/v1"
+export WORKSPACE=/mnt/shared-storage-user/wenxiaoyu
+export CHECKPOINT_DIR=/mnt/shared-storage-user/wenxiaoyu/MAGIC/checkpoints
+QWEN_257BI_MODEL_PATH=$WORKSPACE/models/Qwen2.5-7B-Instruct
+
 # Ray
 export RAY_MASTER_PORT="${RAY_MASTER_PORT:-6379}"
 
@@ -94,7 +101,7 @@ SWITCH_METRIC_WINDOW="${SWITCH_METRIC_WINDOW:-3}"
 
 timestamp=$(date '+%Y-%m-%d_%H-%M-%S')
 project_name=game
-experiment_name="public_run-${timestamp}"
+experiment_name="D-q257bi-A-q257bi-${timestamp}"
 
 ############################
 # 3) Bootstrap
@@ -176,7 +183,7 @@ PYTHONUNBUFFERED=1 python -m verl.separated_trainer.main_ppo \
   trainer.total_epochs=1 \
   trainer.total_training_steps=300 \
   algorithm.adv_estimator=grpo \
-  algorithm.switch_agent.model_paths=[${MODEL_ATTACKER_SFT},${MODEL_DEFENDER_BASE}] \
+  algorithm.switch_agent.model_paths=[${QWEN_257BI_MODEL_PATH},${QWEN_257BI_MODEL_PATH}] \
   algorithm.switch_agent.agent_roles=[attacker,defender] \
   algorithm.switch_agent.train_roles=[attacker,defender] \
   algorithm.switch_agent.start_agent=defender \
@@ -184,7 +191,7 @@ PYTHONUNBUFFERED=1 python -m verl.separated_trainer.main_ppo \
   reward_model.reward_manager=game \
   reward_model.mask_unfinished_reward=True \
   +reward_model.use_format_reward=True \
-  +reward_model.format_reward_roles=[attacker,defender] \
+  +reward_model.format_reward_roles=[attacker] \
   algorithm.filter_groups.enable=False \
   trainer.logger=[console,wandb]
 
