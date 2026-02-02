@@ -67,7 +67,7 @@ export FORMAT_REWARD_VALUE="${FORMAT_REWARD_VALUE:-1}"
 export RAY_MASTER_PORT="${RAY_MASTER_PORT:-6379}"
 
 # Dataset paths (relative to repo)
-TRAIN_FILES="${TRAIN_FILES:-data/safety/train_v2.parquet}"
+TRAIN_FILES="${TRAIN_FILES:-data/safety/train.parquet}"
 VAL_FILES="${VAL_FILES:-data/safety/test_wjb.parquet}"
 
 # Output / checkpoints
