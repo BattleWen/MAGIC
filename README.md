@@ -128,7 +128,7 @@ Coming soon ...
 # 📄 Paper & Citation
 
 	@article{wen2026magic,
-		title={MAGIC: A Co-Evolving Attacker--Defender Adversarial Game for Robust LLM Safety},
+		title={MAGIC: A Co-Evolving Attacker-Defender Adversarial Game for Robust LLM Safety},
 		author={Wen, Xiaoyu and He, Zhida and Qi, Han and Wan, Ziyu and Wen, Ying and Zheng, Tianhang and Xu, Xingcheng and Lu, Chaochao and Zhang, Qiaosheng},
 		journal={arXiv preprint},
 		year={2026}
