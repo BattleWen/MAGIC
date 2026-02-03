@@ -129,17 +129,17 @@ Looking for ./eval/README.md
 ```
 
 # 📄 Paper & Citation
+```bibtex
+@article{wen2026magic,
+	title={MAGIC: A Co-Evolving Attacker-Defender Adversarial Game for Robust LLM Safety},
+	author={Wen, Xiaoyu and He, Zhida and Qi, Han and Wan, Ziyu and Wen, Ying and Zheng, Tianhang and Xu, Xingcheng and Lu, Chaochao and Zhang, Qiaosheng},
+	journal={arXiv preprint arxiv:2602.01539},
+	year={2026}
+}
 
-	@article{wen2026magic,
-		title={MAGIC: A Co-Evolving Attacker-Defender Adversarial Game for Robust LLM Safety},
-		author={Wen, Xiaoyu and He, Zhida and Qi, Han and Wan, Ziyu and Wen, Ying and Zheng, Tianhang and Xu, Xingcheng and Lu, Chaochao and Zhang, Qiaosheng},
-		journal={arXiv preprint arxiv:2602.01539},
-		year={2026}
-	}
-
-	@article{wan2025rema,
-		title={Rema: Learning to meta-think for llms with multi-agent reinforcement learning},
-		author={Wan, Ziyu and Li, Yunxiang and Wen, Xiaoyu and Song, Yan and Wang, Hanjing and Yang, Linyi and Schmidt, Mark and Wang, Jun and Zhang, Weinan and Hu, Shuyue and others},
-		journal={arXiv preprint arXiv:2503.09501},
-		year={2025}
-	}
+@article{wan2025rema,
+	title={Rema: Learning to meta-think for llms with multi-agent reinforcement learning},
+	author={Wan, Ziyu and Li, Yunxiang and Wen, Xiaoyu and Song, Yan and Wang, Hanjing and Yang, Linyi and Schmidt, Mark and Wang, Jun and Zhang, Weinan and Hu, Shuyue and others},
+	journal={arXiv preprint arXiv:2503.09501},
+	year={2025}
+}

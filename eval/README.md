@@ -186,40 +186,41 @@ If you use run_classification.sh, ensure the input JSON format is:
 Fill in parameters in eval/pattern/src/run_classification.sh to start Attack Pattern analysis.
 
 ## 🫶🏻 Acknowledge
-    # OpenRT
-    @article{wang2026openrt,
-        title={OpenRT: An Open-Source Red Teaming Framework for Multimodal LLMs},
-        author={Wang, Xin and Chen, Yunhao and Li, Juncheng and Wang, Yixu and Yao, Yang and Gu, Tianle and Li, Jie and Teng, Yan and Ma, Xingjun and Wang, Yingchun and others},
-        journal={arXiv preprint arXiv:2601.01592},
-        year={2026}
-    }
+```bibtex
+# OpenRT
+@article{wang2026openrt,
+    title={OpenRT: An Open-Source Red Teaming Framework for Multimodal LLMs},
+    author={Wang, Xin and Chen, Yunhao and Li, Juncheng and Wang, Yixu and Yao, Yang and Gu, Tianle and Li, Jie and Teng, Yan and Ma, Xingjun and Wang, Yingchun and others},
+    journal={arXiv preprint arXiv:2601.01592},
+    year={2026}
+}
 
-    # Olmes
-    @inproceedings{gu2025olmes,
-        title={Olmes: A standard for language model evaluations},
-        author={Gu, Yuling and Tafjord, Oyvind and Kuehl, Bailey and Haddad, Dany and Dodge, Jesse and Hajishirzi, Hannaneh},
-        booktitle={Findings of the Association for Computational Linguistics: NAACL 2025},
-        pages={5005--5033},
-        year={2025}
-    }
+# Olmes
+@inproceedings{gu2025olmes,
+    title={Olmes: A standard for language model evaluations},
+    author={Gu, Yuling and Tafjord, Oyvind and Kuehl, Bailey and Haddad, Dany and Dodge, Jesse and Hajishirzi, Hannaneh},
+    booktitle={Findings of the Association for Computational Linguistics: NAACL 2025},
+    pages={5005--5033},
+    year={2025}
+}
 
-    # Ai2 safety tool
-    @misc{wildteaming2024,
-        title={WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models}, 
-        author={Liwei Jiang and Kavel Rao and Seungju Han and Allyson Ettinger and Faeze Brahman and Sachin Kumar and Niloofar Mireshghallah and Ximing Lu and Maarten Sap and Yejin Choi and Nouha Dziri},
-        year={2024},
-        eprint={2406.18510},
-        archivePrefix={arXiv},
-        primaryClass={cs.CL},
-        url={https://arxiv.org/abs/2406.18510}, 
-    }
+# Ai2 safety tool
+@misc{wildteaming2024,
+    title={WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models}, 
+    author={Liwei Jiang and Kavel Rao and Seungju Han and Allyson Ettinger and Faeze Brahman and Sachin Kumar and Niloofar Mireshghallah and Ximing Lu and Maarten Sap and Yejin Choi and Nouha Dziri},
+    year={2024},
+    eprint={2406.18510},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2406.18510}, 
+}
 
-    @misc{wildguard2024,
-      title={WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs}, 
-      author={Seungju Han and Kavel Rao and Allyson Ettinger and Liwei Jiang and Bill Yuchen Lin and Nathan Lambert and Yejin Choi and Nouha Dziri},
-      year={2024},
-      eprint={2406.18495},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.18495}, 
-    }
+@misc{wildguard2024,
+    title={WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs}, 
+    author={Seungju Han and Kavel Rao and Allyson Ettinger and Liwei Jiang and Bill Yuchen Lin and Nathan Lambert and Yejin Choi and Nouha Dziri},
+    year={2024},
+    eprint={2406.18495},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2406.18495}, 
+}
