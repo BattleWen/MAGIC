@@ -93,7 +93,8 @@ export WANDB_API_KEY=<API_KEY>
 export WILDGUARD_API_ENDPOINT="http://<API URL>/v1"
 export WORKSPACE=<ROOT_PATH>
 export CHECKPOINT_DIR=<ROOT_PATH>/MAGIC/checkpoints
-QWEN_257BI_MODEL_PATH=$WORKSPACE/models/Qwen2.5-7B-Instruct
+export MODEL_DEFENDER_BASE=$WORKSPACE/models/Qwen2.5-7B-Instruct
+export MODEL_ATTACKER_SFT=$WORKSPACE/models/Qwen2.5-7B-Instruct
 
 ```
 
