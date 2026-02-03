@@ -123,7 +123,7 @@ see `src/verl/verl/separated_trainer/config/ppo_trainer.yaml` for more details.
 
 ## How to evalute
 ```bash
-Coming soon ...
+Looking for ./eval/README.md
 ```
 
 # 📄 Paper & Citation
