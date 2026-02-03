@@ -1,0 +1,2 @@
+task_class: StrongRejectSmall
+classifier_model_name: WildGuard

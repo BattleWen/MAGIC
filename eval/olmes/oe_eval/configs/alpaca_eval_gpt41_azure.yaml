@@ -1,0 +1,7 @@
+# For Azure use of GPT-4.1, nothing else
+gpt-4.1-2025-04-14:
+  - client_class: "openai.AzureOpenAI"
+    azure_deployment: "gpt-4.1-standard"
+    azure_endpoint: "https://ai-olmohub1163464654570.openai.azure.com/"
+    api_version: "2025-04-14-preview"
+    api_key: "${AZURE_EVAL_API_KEY}" # NOTE, use the API key for the OLMo deployment

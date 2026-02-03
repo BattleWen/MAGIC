@@ -1,0 +1,6 @@
+task_class: HarmbenchAttackerDefenderAPI
+classifier_model_name: Qwen3GuardAPI
+attacker_api_url: "http://s-20251209113206-shdm2-decode.ailab-safethm.svc:24341/v1"
+defender_api_url: "http://s-20251209140430-22wfj-decode.ailab-safethm.svc:24342/v1"
+attacker_api_key: "FAKE_API_KEY"
+defender_api_key: "FAKE_API_KEY"

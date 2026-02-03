@@ -1,0 +1,2 @@
+task_class: HarmbenchAttackerDefender
+classifier_model_name: Qwen3GuardAPI

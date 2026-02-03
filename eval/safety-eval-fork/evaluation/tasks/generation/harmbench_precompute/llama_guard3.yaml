@@ -1,0 +1,2 @@
+task_class: HarmbenchPrecomputeVanilla
+classifier_model_name: LlamaGuard3

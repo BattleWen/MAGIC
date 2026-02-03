@@ -1,0 +1,48 @@
+# config/config.yaml
+
+attacker:
+  provider: "sglang"
+  model: "Qwen/Qwen2.5-32B-Instruct"
+  port: 30009
+  temperature: 0.3
+  max_retries: 10
+  max_turns: 7
+  plans_file: './strategies/attack_plans.json'
+  plan_revision: true           # whether to extend unsuccessful plans that ran out of phases
+  run_all_strategies: false     # only require one successful strategy per behavior
+  strategies_per_behavior: 10   # set to 50 for completeness
+
+target:
+  provider: "openai"
+  model: "gpt-4o"
+  temperature: 0
+  max_retries: 10
+
+textgrad:
+  enabled: true
+  provider: "sglang"
+  model: "Qwen/Qwen2.5-32B-Instruct"
+  port: 30009
+  temperature: 0
+  max_retries: 10
+  max_turns_per_phase: 4  # retry optimization up to this many times until score increases;
+                          # otherwise move onto next plan phase
+
+attack_validation:
+  max_tokens_for_evaluation: 512  # Maximum tokens to consider when checking for jailbreak
+
+multithreading:
+  max_workers: 20         # reduce if experiencing API rate limits
+
+attack_plan_generator:
+  provider: "openai"
+  model: "gpt-4o"
+  temperature: 0.5
+  max_retries: 3
+  behavior_path: "./behaviors/harmbench_behaviors_text_test.csv"  # see readme for download
+  attack_plan_generation_dir: "./strategies"
+  num_behaviors: 159
+
+evaluation:
+  use_gpt_judge: true  # Set to true to use GPT evaluator
+  judge_model: "gpt-4o"  # Only needed if use_gpt_judge is true

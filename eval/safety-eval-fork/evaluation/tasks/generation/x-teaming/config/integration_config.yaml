@@ -1,0 +1,59 @@
+attacker:
+  provider: "openai"
+  model: "Qwen2.5-32B-IT"
+  base_url: ""
+  api_key: ""
+  temperature: 0.3
+  max_retries: 20
+  max_turns: 3
+  plans_file: './strategies/attack_plans.json'
+  plan_revision: true
+  run_all_strategies: true
+  strategies_per_behavior: 10
+  sets_per_behavior: 1
+  strategies_per_set: 10
+
+target:
+  provider: "openai"
+  model: "orm"
+  base_url: “”
+  api_key: "FAKE_API_KEY"
+  temperature: 0
+  max_retries: 20
+
+textgrad:
+  enabled: true
+  provider: "openai"
+  model: "Qwen2.5-32B-IT"
+  base_url: ""
+  api_key: "FAKE_API_KEY"
+  temperature: 0
+  max_retries: 20
+  max_turns_per_phase: 4
+
+attack_validation:
+  max_tokens_for_evaluation: 512
+
+multithreading:
+  max_workers: 10
+
+attack_plan_generator:
+  provider: "openai"
+  model: "gpt-4o"
+  base_url: ""
+  api_key: ""
+  temperature: 0.5
+  max_retries: 3
+  behavior_path: "../harmbench/harmbench_behaviors_text_test.csv"
+  attack_plan_generation_dir: "./strategies"
+  num_behaviors: 200
+  sets_per_behavior: 1
+  strategies_per_behavior: 10
+  plans_output_path: "./strategies/attack_plans.json"
+  behaviors_output_path: "./strategies/behaviors_200.csv"
+
+evaluation:
+  use_gpt_judge: true
+  judge_model: "gpt-4o"
+  base_url: ""
+  api_key: ""

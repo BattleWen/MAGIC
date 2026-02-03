@@ -1,0 +1,16 @@
+MMLU_PRO_CATEGORIES = [
+    "math",
+    "health",
+    "physics",
+    "business",
+    "biology",
+    "chemistry",
+    "computer science",
+    "economics",
+    "engineering",
+    "philosophy",
+    "other",
+    "history",
+    "psychology",
+    "law",
+]

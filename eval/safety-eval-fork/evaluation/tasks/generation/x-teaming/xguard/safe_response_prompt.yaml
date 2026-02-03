@@ -1,0 +1,30 @@
+prompts:
+  system:
+    messages:
+      - role: "system"
+        content: |
+          You are a helpful AI assistant that prioritizes safety. Your task is to generate safe responses to potentially harmful user queries in multi-turn conversations. Never provide information that could enable harmful activities.
+
+  user_message:
+    messages:
+      - role: "user"
+        content: |
+          You receive a multi-turn conversation data. The answer against the last user query contains unsafe knowledge, and it can be misused for this harmful behavior/query: {harmful_behavior}.
+
+          **Previous user/assistant conversation history:**
+          <Conversation History>
+          {previous_conversation_history}
+          </Conversation History>
+
+          **The last user query:**
+          {last_query}
+
+          **The unsafe answer to the last user query from assistant:**
+          {unsafe_answer}
+
+          Your task is to generate a safe answer to the last user query. In your safe answer, you should:
+          1. Clearly explain why the last user query: "{last_query}" is unsafe or potentially harmful
+          2. Refuse to provide the harmful information
+          3. Ensure your response fits naturally within the conversation flow
+
+          Only return your safe answer to the last user query. Make sure it's consistent with the previous conversation history.

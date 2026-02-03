@@ -12,7 +12,7 @@
   <a href=""><img src="https://img.shields.io/badge/🌐_Page-MAGIC-blue" alt="Page"></a>
   <a href="https://github.com/vllm-project/vllm"><img src="https://img.shields.io/badge/vLLM-0.8.5-5C2D91?style=flat-square" alt="vLLM0.8.5"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg"></a>
-  <a href="assets/MAGIC-arxiv-260202.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red" alt="Paper"></a>
+  <a href="assets/2602.01539v1.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red" alt="Paper"></a>
 </p>
 
 # 🤗 Overview
@@ -40,6 +40,8 @@
 	🎯 Subgame Perfect Nash Equilibrium (SPNE) formulation
 	🔄 Online MARL with GRPO
 	🧪 Strong single-turn & multi-turn safety improvements
+
+	We build our training pipeline on: https://github.com/ziyuwan/ReMA-public
 
 # 📒 Method
 
@@ -131,7 +133,7 @@ Looking for ./eval/README.md
 	@article{wen2026magic,
 		title={MAGIC: A Co-Evolving Attacker-Defender Adversarial Game for Robust LLM Safety},
 		author={Wen, Xiaoyu and He, Zhida and Qi, Han and Wan, Ziyu and Wen, Ying and Zheng, Tianhang and Xu, Xingcheng and Lu, Chaochao and Zhang, Qiaosheng},
-		journal={arXiv preprint},
+		journal={arXiv preprint arxiv:2602.01539},
 		year={2026}
 	}
 

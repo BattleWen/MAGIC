@@ -1,0 +1,57 @@
+# xguard/config.yaml
+
+multithreading:
+  max_workers: 20
+
+attacker:
+  provider: "sglang"
+  model: "Qwen/Qwen2.5-32B-Instruct"
+  port: 30009
+  temperature: 0.3
+  max_retries: 10
+  max_turns: 7
+  plans_file: './xguard/output/2025-04-03_22-36-58/attack_plans.json'
+  plan_revision: true
+  run_all_strategies: true   # Only require one successful strategy per behavior
+  strategies_per_behavior: 2
+  # special settings for xguard
+  sets_per_behavior: 1
+  strategies_per_set: 2
+
+target:
+  provider: "openai"
+  model: "gpt-4o"
+  temperature: 0
+  max_retries: 10
+
+textgrad:
+  enabled: true
+  provider: "sglang"
+  model: "Qwen/Qwen2.5-32B-Instruct"
+  port: 30009
+  temperature: 0
+  max_retries: 10
+  max_turns_per_phase: 4
+
+attack_validation:
+  max_tokens_for_evaluation: 512  # Maximum tokens to consider when checking for jailbreak
+
+attack_plan_generator:
+  provider: "openai"
+  model: "gpt-4o"
+  temperature: 0.5
+  max_retries: 3
+  behavior_path: "../behaviors/sampled_data_batch1.csv"
+  output_dir: "./pilot_results/generator"
+  attack_plan_generation_dir: "./output"
+  num_behaviors: 2500
+
+safety_data_generator:
+  provider: "openai"
+  model: "gpt-4o"
+  temperature: 0
+  max_retries: 10
+
+evaluation:
+  use_gpt_judge: true  # Set to true to use GPT evaluator
+  judge_model: "gpt-4o"  # Only needed if use_gpt_judge is true

@@ -1,0 +1,107 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openrt"
+version = "0.0.2"
+description = "An Open-Source Red Teaming Framework for Large Language Models (LLMs) and Vision-Language Models (VLMs)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "AGPLv3"}
+authors = [
+    {name = "OpenRT Team", email = "24110240013@m.fudan.edu.cn"}
+]
+keywords = [
+    "ai", "security", "red-teaming", "llm", "vlm", "jailbreak",
+    "attack", "evaluation", "nlp", "computer-vision", "machine-learning",
+    "prompt-engineering", "adversarial", "robustness", "safety"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Testing",
+    "Natural Language :: English",
+]
+
+dependencies = [
+    # Core
+    "openai>=2.8.1",
+    "openai-agents>=0.6.1",
+    "nest-asyncio>=1.6.0",
+    "aiofiles>=25.1.0",
+    "python-dotenv>=1.2.1",
+    # Data Processing
+    "pandas>=2.2.3",
+    # Data Visualization
+    "matplotlib>=3.7.0",
+    "seaborn>=0.13.0",
+    # Tokenization
+    "protobuf>=6.0.0",
+    "tiktoken>=0.12.0",
+    "sentencepiece>=0.2.0",
+    # Image Processing
+    "Pillow>=12.0.0",
+    # Progress & Utilities
+    "tqdm>=4.67.1",
+    # Machine Learning & AI
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.30.0",
+    "diffusers>=0.21.0",
+    "accelerate>=0.20.0",
+    # NLP & Embeddings
+    "sentence-transformers>=2.7.0",
+    "spacy>=3.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+docs = [
+    "sphinx>=6.0.0",
+    "sphinx-rtd-theme>=1.2.0",
+    "myst-parser>=1.0.0",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+]
+all = [
+    "openrt[dev,docs,test]",
+]
+
+[project.urls]
+Homepage = "https://github.com/AI45Lab/OpenRT"
+Repository = "https://github.com/AI45Lab/OpenRT"
+Documentation = "https://github.com/AI45Lab/OpenRT/wiki"
+"Bug Tracker" = "https://github.com/AI45Lab/OpenRT/issues"
+
+[project.scripts]
+openrt-eval = "OpenRT.eval:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["OpenRT*"]
+
+[tool.setuptools.package-data]
+OpenRT = ["data/*.csv", "example/configs/*.yaml"]
