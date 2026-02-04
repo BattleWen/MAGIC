@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/datasets/XiaoyuWen/MAGIC"><img src="https://img.shields.io/badge/🌐_huggingface-MAGIC-yellow" alt="Page"></a>
+  <a href="https://huggingface.co/XiaoyuWen/MAGIC"><img src="https://img.shields.io/badge/🌐_huggingface-MAGIC-yellow" alt="Page"></a>
   <a href="https://github.com/vllm-project/vllm"><img src="https://img.shields.io/badge/vLLM-0.8.5-5C2D91?style=flat-square" alt="vLLM0.8.5"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg"></a>
   <a href="assets/MAGIC_arxiv.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red" alt="Paper"></a>
