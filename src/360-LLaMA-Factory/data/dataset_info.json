@@ -17,15 +17,6 @@
       "system": "system"
     }
   },
-  "game_cot_moe": {
-    "file_name": "game_cot_moe.json",
-    "columns": {
-      "prompt": "instruction",
-      "query": "input",
-      "response": "output",
-      "system": "system"
-    }
-  },
   "game_cot_gemini": {
     "file_name": "game_cot_harmful.json",
     "columns": {
