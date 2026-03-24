@@ -99,7 +99,7 @@ def make_map_fn(split):
                     "role": "user",
                     "content": HARM_TEMPLATE + VANILLA_TEMPLATE.format(question=question)
                     if data_type == 'vanilla_harmful'
-                    else adversarial
+                    else BENIGN_TEMPLATE + VANILLA_TEMPLATE.format(question=question)
                 }
             ],
             "ability": "safety",
